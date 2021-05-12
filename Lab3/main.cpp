@@ -9,6 +9,7 @@ void multiply();
 void rrotate();
 void init();
 void disp();
+void disp2();
 
 float triangle[3][3] = {{100, 200, 150}, {100, 100, 200}, {1, 1, 1}};
 float rot_mat[3][3] = {{0}, {0}, {0}};
@@ -60,15 +61,37 @@ void disp(){
     glColor3f(0.3,0.8,0.5);
     drawTriangle(triangle);
     glColor3f(0.4,0,0.6);
-
     rrotate(0,0);
     drawTriangle(result);
-
     glColor3f(0.7,0.6,0.2);
     m = h * (1-cos(theta)) + k * (sin(theta));
     n = k * (1 - cos(theta)) - h * (sin(theta));
     rrotate(m, n);
     drawTriangle(result);
+    glFlush();
+}
+
+void disp2(){
+    glClearColor(1,1,1,1);
+    glClear(GL_COLOR_BUFFER_BIT);
+
+    glColor3f(0.3,0.8,0.5);
+    drawTriangle(triangle);
+
+    glPushMatrix();
+    glColor3f(0.4,0,0.6);
+    glRotatef(30,0,0,1);
+    drawTriangle(triangle);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.7,0.6,0.2);
+    glTranslatef(h,k,0);
+    glRotatef(30,0,0,1);
+    glTranslatef(-h, -k, 0);
+    drawTriangle(triangle);
+    glPopMatrix();
+
     glFlush();
 }
 
@@ -88,7 +111,7 @@ int main(int argc, char** argv){
     glutInitWindowSize(500, 500);
     glutInitWindowPosition(0, 0);
     glutCreateWindow("Triangle Rotation");
-    glutDisplayFunc(disp);
+    glutDisplayFunc(disp2);
 	init();
 	glutMainLoop();
 }

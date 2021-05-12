@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1620791556 source:d:\6th semester\cg lab\cg-lab-programs\lab3\main.cpp
+1620792519 source:d:\6th semester\cg lab\cg-lab-programs\lab3\main.cpp
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>
