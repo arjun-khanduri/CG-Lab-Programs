@@ -1,9 +1,8 @@
 # depslib dependency file v1.0
-1621963143 source:d:\6th semester\cg lab\cg-lab-programs\lab3\main.cpp
+1622002847 source:d:\6th semester\cg lab\cg-lab-programs\lab-4\main.cpp
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>
-	<math.h>
 	<stdio.h>
 
 1301111164 c:\program files (x86)\codeblocks\mingw\include\gl\gl.h
@@ -220,9 +219,6 @@
 
 1301111156 c:\program files (x86)\codeblocks\mingw\include\oleidl.h
 	<objfwd.h>
-
-1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
-	<_mingw.h>
 
 1341006776 c:\program files (x86)\codeblocks\mingw\include\stdio.h
 	<_mingw.h>

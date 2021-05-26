@@ -111,7 +111,7 @@ int main(int argc, char** argv){
     glutInitWindowSize(500, 500);
     glutInitWindowPosition(0, 0);
     glutCreateWindow("Triangle Rotation");
-    glutDisplayFunc(disp2);
+    glutDisplayFunc(disp);
 	init();
 	glutMainLoop();
 }
