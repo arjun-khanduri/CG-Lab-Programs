@@ -62,7 +62,7 @@ void init(){
 }
 
 int main(int argc, char** argv){
-    printf("Enter number of division");
+    printf("Enter number of divisions: ");
     scanf("%d", &n);
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH);
