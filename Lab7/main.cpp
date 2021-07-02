@@ -110,8 +110,6 @@ int main(int argc, char** argv){
     glutCreateWindow("Cube Rotation");
     glutDisplayFunc(display);
 	init();
-
-
 	glutKeyboardFunc(keys);
 	glutMouseFunc(mouse);
 	glEnable(GL_DEPTH_TEST);
