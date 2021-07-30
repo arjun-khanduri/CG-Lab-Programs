@@ -223,3 +223,9 @@
 1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
 	<_mingw.h>
 
+1627446180 source:d:\6th semester\cg lab\cg-lab-programs\lab11\main.cpp
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<math.h>
+
