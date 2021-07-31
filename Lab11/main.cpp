@@ -2,6 +2,7 @@
 #include<GL/glu.h>
 #include<GL/glut.h>
 #include<math.h>
+#include<stdio.h>
 
 int id = 0, flag = 0;
 float theta = 0;
@@ -117,9 +118,9 @@ int main(int argc, char** argv){
     glutCreateWindow("Curve");
     init();
     glutCreateMenu(menu);
-    glutAddMenuEntry("Flag", 1);
-    glutAddMenuEntry("Start Animation", 2);
-    glutAddMenuEntry("Stop Animation", 3);
+    	glutAddMenuEntry("Flag", 1);
+    	glutAddMenuEntry("Start Animation", 2);
+    	glutAddMenuEntry("Stop Animation", 3);
     glutAttachMenu(GLUT_RIGHT_BUTTON);
     glutDisplayFunc(display);
     glutMainLoop();
